@@ -2,7 +2,8 @@
 
 **Label Paste** is a simple, highly effective browser extension that makes you more productive by allowing you to save frequently used text snippets and quickly paste them directly from your right-click context menu.
 
-![Label Paste Context Menu](menu.png)
+![Label Paste Extension Popup](menu.png)
+![Right Click Context Menu](when-right-click.png)
 
 ## Why is this useful?
 Are you tired of typing the same email addresses, signatures, generic replies, or code snippets over and over? This extension eliminates repetitive typing. 
