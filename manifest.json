@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "Label Paste",
+  "version": "1.0",
+  "permissions": ["contextMenus", "storage", "scripting", "activeTab"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html" }
+}

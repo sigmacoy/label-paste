@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+._*
+.AppleDouble
+
+# Extension builds
+*.zip
+*.crx
+dist/
+build/
+
+# Secrets
+.env
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Node
+node_modules/
