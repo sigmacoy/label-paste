@@ -8,7 +8,7 @@ async function buildMenu() {
   chrome.contextMenus.removeAll(() => {
     chrome.contextMenus.create({
       id: "pasteRoot",
-      title: "Extension Paste",
+      title: "Label Paste",
       contexts: ["editable"]
     });
     chrome.storage.local.get("labels", (data) => {
@@ -46,6 +46,8 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
             el.value = el.value.slice(0, start) + t + el.value.slice(end);
             el.selectionStart = el.selectionEnd = start + t.length;
             el.dispatchEvent(new Event("input", { bubbles: true }));
+          } else if (el && el.isContentEditable) {
+            document.execCommand("insertText", false, t);
           }
         },
         args: [text]
